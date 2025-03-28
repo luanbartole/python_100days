@@ -6,5 +6,3 @@ spaceship = input("Spaceship's Name: ")
 planet = input("Planet: ")
 print("-"*25)
 print(f"Captain {astro}, you are commanding the spaceship {spaceship}. Your Mission: discover the secrets of the planet {planet}!")
-
-
