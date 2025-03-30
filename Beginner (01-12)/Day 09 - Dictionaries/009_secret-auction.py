@@ -16,6 +16,7 @@ def clear():
 def highest_bidder(auction_bids):
     """
     Function to determine and print the highest bidder.
+
     Parameters:
     auction_bids (dict): A dictionary containing bidder names as keys and their bid amounts as values.
     """
