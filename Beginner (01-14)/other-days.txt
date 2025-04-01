@@ -1,0 +1,9 @@
+Day 06 - Python Functions and Karel
+I learned about the for loop and applied programming logic in an interactive maze game as part of the course.
+
+Day 13 - Debugging
+I studied debugging techniques, including how to identify errors, use try and except, and leverage the debugger in IDEs.
+
+Day 14 - Higher Lower Game
+Since this day focused on creating another game to reinforce previous concepts, I chose to skip it in favor of tackling
+more challenging projects ahead.
