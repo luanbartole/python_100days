@@ -32,8 +32,8 @@ def draw_dot():
     paintbrush.dot(20, random_color)  # Draw a dot of diameter 20
 
 # --- Function to draw a horizontal line of 10 dots ---
-def draw_line():
-    for _ in range(10):
+def draw_line(dots=10):
+    for _ in range(dots):
         draw_dot()               # Draw one dot
         paintbrush.penup()       # Lift the pen to avoid drawing a line between dots
         paintbrush.forward(50)   # Move forward to space the dots
