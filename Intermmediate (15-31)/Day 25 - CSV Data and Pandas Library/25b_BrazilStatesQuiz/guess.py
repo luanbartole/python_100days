@@ -41,7 +41,7 @@ class Guess(Turtle):
         for _ in range(TRIES):
 
             answer_state = self.screen.textinput(
-                title=f"{self.correct_tries}/27 Correct tries",
+                title=f"{TRIES-_} Tries left",
                 prompt="State Name:"
             )
 
@@ -52,9 +52,13 @@ class Guess(Turtle):
             correct_state = self.check_state(answer_state)
 
             if correct_state is not None:
-                self.correct_tries += 1
-                self.correct_states_list.append(correct_state)
-                self.write_state(STATES_LIST.index(correct_state))
+                if correct_state == "Exit":
+                    self.game_over()
+                    break
+                else:
+                    self.correct_tries += 1
+                    self.correct_states_list.append(correct_state)
+                    self.write_state(STATES_LIST.index(correct_state))
 
         self.game_over()
 
@@ -70,6 +74,8 @@ class Guess(Turtle):
         """
         if answer in STATES_LIST and answer not in self.correct_states_list:
             return answer
+        if answer == "Exit":
+            return answer
 
     def write_state(self, state_id):
         """
@@ -78,12 +84,15 @@ class Guess(Turtle):
         Args:
             state_id (int): The index of the state in the CSV/state list.
         """
+        self.screen.tracer(0)
         self.goto(X_LIST[state_id], Y_LIST[state_id])
         self.write(STATES_ACR[state_id], align="center", font=("Courier", 10, "bold"))
+        self.screen.update()
 
     def game_over(self):
         """
-        Display 'GAME OVER' and the number of correct guesses on the screen.
+        Display 'GAME OVER' and the number of correct guesses on the screen
+        and creates a .csv file with the missing states for the user to learn.
 
         This method writes the final result in the bottom-left corner of the map.
         """
@@ -93,3 +102,7 @@ class Guess(Turtle):
         self.goto(-350,-350)
         self.write(f"{self.correct_tries}/27", font=FONT)
         self.screen.update()
+
+        missing_states = [state for state in STATES_LIST if state not in self.correct_states_list]
+        new_data = pandas.DataFrame(missing_states)
+        new_data.to_csv("states_to_learn.csv")
