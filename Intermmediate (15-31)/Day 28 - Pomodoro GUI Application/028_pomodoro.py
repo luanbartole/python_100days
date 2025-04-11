@@ -17,7 +17,7 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 
 # Timer speed (for testing: 1 means it counts down in real time)
-SET_TIMER = 1  # Set to 1000 for actual seconds in production
+SET_TIMER = 1000  # Set to 1000 for actual seconds in production
 
 # Tracking repetitions and the timer
 reps = 0
