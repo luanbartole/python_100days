@@ -4,7 +4,7 @@ import data
 
 question_bank = []
 
-for question in data.question_data:
+for question in data.new_question_data:
     new_question = Question(question['text'], question['answer'])
     question_bank.append(new_question)
 
