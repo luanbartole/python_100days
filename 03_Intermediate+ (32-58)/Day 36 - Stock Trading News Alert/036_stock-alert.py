@@ -42,6 +42,7 @@ def stock_price_diff():
     yesterday_close = data[0]["close"]
     two_days_ago_close = data[1]["close"]
 
+
     percent_diff = round(((yesterday_close - two_days_ago_close) / two_days_ago_close) * 100)
     return percent_diff
 
