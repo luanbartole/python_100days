@@ -52,17 +52,17 @@ headers = {
 # print(response.text)
 
 # Create a new graph
-# response = requests.post(url=GRAPH_ENDPOINT, json=graph_config, headers=headers)
+# response = requests.post(url=GRAPH_ENDPOINT, json=graph_config, nutritionix_headers=nutritionix_headers)
 # print(response.text)
 
 # Add a new pixel (data entry)
-# response = requests.post(url=READING_GRAPH_ENDPOINT, json=pixel_params, headers=headers)
+# response = requests.post(url=READING_GRAPH_ENDPOINT, json=pixel_params, nutritionix_headers=nutritionix_headers)
 # print(response.text)
 
 # Update an existing pixel
-# response = requests.put(url=PIXEL_ENDPOINT, json=update_pixel, headers=headers)
+# response = requests.put(url=PIXEL_ENDPOINT, json=update_pixel, nutritionix_headers=nutritionix_headers)
 # print(response.text)
 
 # Delete a pixel (today’s entry)
-# response = requests.delete(url=PIXEL_ENDPOINT, headers=headers)
+# response = requests.delete(url=PIXEL_ENDPOINT, nutritionix_headers=nutritionix_headers)
 # print(response.text)
