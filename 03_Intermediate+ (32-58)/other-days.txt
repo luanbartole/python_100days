@@ -1,0 +1,7 @@
+Day 49 - Automating Job Applications on LinkedIn
+Day 50 - Auto TInder Swiping Bot
+Day 51 - Internet Speed Twitter Complain Bot
+Day 52 - Instagram Follower Bot
+
+The days listed above were primarily focused on practicing Web Scraping, which was previously covered in other projects,
+so I have chose to skip them in favor of tackling more challenging projects ahead.
