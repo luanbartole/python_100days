@@ -1,0 +1,279 @@
+/* =============================
+   Base Styles
+============================= */
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 8s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+
+
+body {
+	font-family: "Montserrat", sans-serif; /* Clean, modern font for body */
+}
+
+h1 {
+	font-size: 3.5rem;
+	font-weight: 900;
+	line-height: 1.5; /* Big, bold title headers */
+}
+
+h2 {
+	font-family: "Montserrat";
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 1.5; /* Secondary headers */
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: 900; /* Sub-headers */
+}
+
+p, li {
+	color: #8f8f8f;
+	font-weight: 500; /* Lighter grey text for body and list items */
+}
+
+/* =============================
+   Title Section
+============================= */
+
+#title {
+	color: #fff; /* White text */
+	text-align: left; /* Align text to left by default */
+}
+
+#title .container-fluid {
+	padding: 3% 15% 7%; /* Padding around the title content */
+}
+
+.download-icon {
+	padding-right: 5px; /* Space between icon and text in download button */
+}
+
+/* =============================
+   Navigation Bar
+============================= */
+
+.navbar {
+	padding: 0 0 4.5rem; /* Bottom spacing under navbar */
+}
+
+.navbar-brand {
+	font-family: ubuntu; /* Brand logo font */
+	font-size: 2.5rem; /* Bigger brand text */
+}
+
+.nav-item {
+	padding: 0 18px; /* Space between nav items */
+}
+
+.nav-link {
+	font-size: 1.2rem;
+	font-family: "Montserrat-Light", sans-serif; /* Light text for links */
+}
+
+/* =============================
+   Download Buttons
+============================= */
+
+.download-button {
+	margin: 5% 3% 0% 0%; /* Spacing around download buttons */
+}
+
+/* =============================
+   Title Image (e.g. iPhone/Dog)
+============================= */
+
+.title-image {
+	width: 20%; /* Make image small initially */
+	transform: rotate(25deg); /* Tilt the image for a dynamic look */
+	position: absolute; /* Float on top of layout */
+	right: 23%; /* Position it to the right */
+}
+
+/* =============================
+   Features Section
+============================= */
+
+#features {
+	padding: 7% 15%;
+	background-color: #fff;
+	position: relative; /* Allows absolute positioning within */
+}
+
+.feature-box {
+	text-align: center; /* Center-align each feature */
+}
+
+.feature-box p {
+	padding: 4.5%; /* Padding inside each feature paragraph */
+}
+
+.icon {
+	margin-bottom: 1rem;
+	color: #ef8172; /* Default icon color */
+}
+
+.icon:hover {
+	color: #ff4c68; /* Hover color for icons */
+}
+
+/* =============================
+   Testimonials Section
+============================= */
+
+#testimonials {
+	text-align: center;
+	background-color: #ef8172; /* Background matches icon hover */
+}
+
+#testimonials em {
+	color: #fff;
+	font-weight: 500; /* Italic quotes styled with white color */
+}
+
+.testimonial-image {
+	width: 10%;
+	border-radius: 100%; /* Circular images */
+	margin: 20px;
+}
+
+.carousel-item {
+	padding: 7% 15%; /* Spacing for each testimonial card */
+}
+
+.carousel-item h2 {
+	color: #fff; /* White testimonial text */
+}
+
+/* =============================
+   Press Section
+============================= */
+
+#press {
+	background-color: #ef8172;
+	text-align: center;
+	padding-bottom: 3%; /* Space below press section */
+}
+
+.press-logo {
+	width: 15%;
+	margin: 20px 20px 50px; /* Space between press logos */
+}
+
+/* =============================
+   Pricing Section
+============================= */
+
+#pricing {
+	padding: 7% 10%;
+}
+
+.pricing-header {
+	margin-bottom: 50px; /* Space under pricing header */
+}
+
+.border-primary {
+	border-width: 1px;
+	border-color: #212529 !important; /* Blackish border override */
+}
+
+/* =============================
+   Responsive Media Queries
+============================= */
+
+/* For screens <= 1280px */
+@media (max-width: 1280px) {
+	#title {
+		text-align: center; /* Center-align on medium screens */
+	}
+
+	h1 {
+		font-size: 3rem; /* Smaller headline on medium screens */
+	}
+}
+
+/* For screens <= 1120px */
+@media (max-width: 1120px) {
+	.title-image {
+		transform: rotate(0); /* Remove rotation */
+		width: 70%; /* Make image much larger */
+		position: static; /* Place in normal document flow */
+	}
+}
+
+/* For screens <= 940px */
+@media (max-width: 940px) {
+	.iphone-image {
+		display: none; /* Hide image on small devices */
+	}
+
+	h1 {
+		font-size: 2.5rem; /* Smaller headers */
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+}
+
+/* =============================
+   Call to Action Section
+============================= */
+
+#cta {
+	background-color: #ff4c68;
+	padding: 7% 10%;
+	text-align: center;
+}
+
+#cta h2 {
+	color: #fff;
+	padding: 0 10%; /* Horizontal padding for CTA text */
+}
+
+#cta .download-button {
+	margin: 2% 2% 0% 0%;
+}
+
+/* =============================
+   Footer Section
+============================= */
+
+#footer {
+	background-color: #fff;
+	padding: 5% 10%;
+	text-align: center;
+}
+
+.social-icon {
+	margin: 20px 5px 20px; /* Even spacing between icons */
+}
