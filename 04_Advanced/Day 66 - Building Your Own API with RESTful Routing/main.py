@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy import Integer, String, Boolean
 from sqlalchemy.sql import func, select
+import random
 
 app = Flask(__name__)
 
@@ -69,6 +70,9 @@ def get_cafe_at_location():
 # Add a new cafe
 @app.route("/add", methods=["POST"])
 def add_cafe():
+    api_key = request.args.get("api-key")
+    if api_key != "TopSecretAPIKey":
+        return jsonify(error={"Forbidden": "That is not allowed. Make sure you have the correct api_key."}), 403
     new_cafe = Cafe(
         name=request.form.get("name"),
         map_url=request.form.get("map_url"),

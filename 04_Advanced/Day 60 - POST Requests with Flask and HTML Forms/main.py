@@ -34,7 +34,7 @@ def contact():
                 to_addrs=user_email,
                 msg=f"Subject: Blog Contact Form - {data['username']} \n\n"
                     f"Message: {data['message']} \n\n"
-                    f"Email: {data['email']} nPhone Number: {data['phone']}"
+                    f"Email: {data['email']} Phone Number: {data['phone']}"
             )
 
         # Show a success message to the user
@@ -60,4 +60,4 @@ def show_post(index):
 
 # Run the Flask development server
 if __name__ == "__main__":
-    app.run(debug=True, host="localhost", port="5000")
+    app.run(debug=True, host="localhost", port="5001")
