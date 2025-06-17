@@ -1,0 +1,7 @@
+1. Pull a random sample from a DataFrame using .sample()
+
+2. How to find duplicate entries with .duplicated() and .drop_duplicates()
+
+3. How to convert string and object data types into numbers with .to_numeric()
+
+4. How to use plotly to generate beautiful pie, donut, and bar charts as well as box and scatter plots
