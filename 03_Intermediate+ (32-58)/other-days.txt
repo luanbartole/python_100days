@@ -1,3 +1,8 @@
+# Skipped or Incomplete Days – 100 Days of Python
+
+This file explains why some days in the challenge don't have associated projects or are incomplete.
+
+---
 Day 49 - Automating Job Applications on LinkedIn
 Day 50 - Auto TInder Swiping Bot
 Day 51 - Internet Speed Twitter Complain Bot

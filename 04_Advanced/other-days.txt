@@ -1,0 +1,23 @@
+# Skipped or Incomplete Days – 100 Days of Python
+
+This file explains why some days in the challenge don't have associated projects or are incomplete.
+
+---
+
+Day 70 – Git, GitHub and Version Control  
+Learned about version control concepts and basic Git/GitHub commands. No specific project was created for this day.
+
+---
+
+Day 71 – Deploying Your Web Application  
+Successfully deployed the blog app from Day 69 using Render (free tier). Project was hosted on GitHub and connected to
+a live database. The deployment was temporary due to free trial limitations. Since the app was the same as Day 69, no
+new code was created.
+
+---
+
+Days 72–81 – Data Science (Disclaimer)  
+These lessons introduced data science topics and projects, but due to a lack of foundational math and statistics
+knowledge, I was not able to fully grasp or engage with the material. I followed along by copying the code to
+familiarize myself with the syntax and tools but did not create original projects. I’ve kept these files for future
+reference and plan to revisit this section once I’ve built up the necessary background.
